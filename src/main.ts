@@ -35,9 +35,9 @@ ctx!.fillStyle = linearGradient!;
 ctx!.fillRect(0, 0, gradientCanvas!.width, gradientCanvas!.height);
 
 const canvasTexture = new THREE.CanvasTexture(gradientCanvas!);
-const canvasMaterial = new THREE.MeshBasicMaterial({
-  map: canvasTexture,
-});
+// const canvasMaterial = new THREE.MeshBasicMaterial({
+//   map: canvasTexture,
+// });
 
 // Create scene
 const scene = new THREE.Scene();
