@@ -10,18 +10,6 @@ export default defineConfig(() => {
       outDir: "../dist",
       emptyOutDir: true,
     },
-    plugins: [
-      glsl({
-        include: [
-          // Glob pattern, or array of glob patterns to import
-          "**/*.glsl",
-          "**/*.wgsl",
-          "**/*.vert",
-          "**/*.frag",
-          "**/*.vs",
-          "**/*.fs",
-        ],
-      }),
-    ],
+    plugins: [glsl()],
   };
 });
